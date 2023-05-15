@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body bgcolor="#B5B2B2">
+        <style>
+            form{
+                border:3px solid;
+                border-color: black;
+                width: 60%;
+                margin:auto;
+            }
+            input{
+                background-color: slategrey;
+            }
+        </style>
+        <h1 align="center">Registro Inscripcion</h1>
+        <form name="reg_socio" method="get">
+            Nombre:<input type="text"  name="nbre.socio" id="nbre.socio" size="50"><br>
+            Apellido:<input type="text"  name="ap.socio" id="ap.socio"><br>
+            Tipo de Documento: 
+            <select name="tipo de documento" id="documento"><br>
+                <option value="Cipe"> Cipe </option><br>
+                <option value="DNI">DNI</option><br>
+                <option value="Pasaporte">Pasaporte</option><br>
+             </select><br>
+            Numero de Documento:
+            <input type="text"><br>
+           Selecione Sexo<input type="radio" name="sexo.soc"   id="sexo.soc" value="varon">Masculino
+            <input type="radio" name="sexo.soc"   id="sexo.soc" value="mujer" checked>Femenino<br>
+           Ingrese su edad:<input type="number" name="edad.soc" id="edad-soc" min="12" max="19" value="12"><br>
+          Materias que adeuda: <br>
+            <input type="checkbox" name="tip_doc"> Matematica <br>
+            <input type="checkbox" name="tip_doc"> Lengua <br>
+            <input type="checkbox" name="tip_doc"> Historia <br>
+            <input type="checkbox" name="tip_doc"> Geografia <br>
+            <input type="checkbox" name="tip_doc"> Programacion
+            <br>
+            Ingrese su fecha de nacimiento:
+            <input type="date" min="2011-01-01"><br>
+            Ingrese su Correo Electronico:
+            <input type="email"> <br>
+            Ingrese direccion de red social:
+            <input type="url"> <br>
+               <textarea name="obs_socio" cols="68" rols="3">Escriba aqui por que eligio esta escuela </textarea> <br>
+               <input type="image" src="imagenes/Tulips.jpg" width="100" height="100" onclick="alert('Bienvenido Alumno Nuevo!')"><br>
+               <input type="submit" value="Enviar" onclick="alert('Formulario Enviado')">
+               <input type="reset" value="Borrar" onclick="alert('Sus datos se han borrado')">
+            
+                
+           
+        </form>
+        
+    </body>
+</html>
